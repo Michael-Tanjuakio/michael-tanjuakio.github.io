@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+h1, h2, p, a { 
+    font-family: "Josefin Sans" 
+}
+
+a { 
+    font-size: 135%; 
+}
+
+p {
+    max-width: 100%;
+    font-size: 125%;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src:url(pics-and-font/JosefinSans-VariableFont_wght.ttf)
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border-style: solid;
+}
+
+.fullwidth {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /*border-style: solid;*/
+    border-color: black;
+    width: 100%;
+    z-index: 20;
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+}
+
+.nav a:hover {
+    color: #245292;
+}
+
+.sticky-top {
+    position:sticky;
+    top: 0;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.homepage-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hpd-item {
+    display: block;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hpd-item:nth-of-type(1) {padding-right: 2.5%;}
+
+.icon-list {
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: flex-start;
+}
+
+.icon-list a {
+    padding-right: 3%;
+    padding-top: 3%;
+}
+
+.icon {
+    width: 30px;
+}
+
+.icon-list-2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-l2-1 {
+    width: 40px;
+}
+
+.icon-l2-2 {
+    width: 45px;
+}
+
+.icon-l2-3 {
+    width: 35px;
+}
+
+.icon-l2-4 {
+    width: 30px;
+    padding-bottom: 10%;
+}
+
+.icon-list-3 {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list-3 a:nth-of-type(1), .icon-list-3 a:nth-of-type(2) {padding-right: 2.5%;}
+
+.section-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 90%;
+}
+.sd-item {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.section-display li:nth-of-type(1) {width: 50%;}
+.section-display li:nth-of-type(2) {max-width: 30%;}
+
+.project-link-button {
+    text-decoration: none;
+    color: black;
+}
+.project-link-button:hover {
+    color: #245292;
+}
+#anchor {
+    scroll-padding-top: 100px;
+}
+
+@media all and (max-width: 1103px) {
+    .nav {
+        justify-content: space-between;
+    }
+    .hpd-item p {
+        text-align: center;
+    }
+    .icon-list {
+        justify-content: center;
+    }
+    .icon-list a:nth-of-type(3) {padding-right: 0%;}
+    .section-display li:nth-of-type(1) {padding-bottom: 5%;}
+    .section-display li:nth-of-type(2) {max-width: 30%;}
+}
+
+@media all and (max-width: 600px) {
+    .nav {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .hpd-item p {
+        text-align: center;
+    }
+    .nav a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .nav li:last-of-type a {
+      border-bottom: none;
+    }
+
+    .icon-list {
+        justify-content: center;
+    }
+
+    .icon-list a:nth-of-type(3) {padding-right: 0%;}
+
+    .section-display {
+        flex-flow: column wrap;
+    }
+    .section-display li:nth-of-type(1) {width: 90%;}
+    .section-display li:nth-of-type(2) {max-width: 75%;}
+}
+
+.hidden {
+    opacity: 0;
+    z-index: 10;
+    transform: translateX(-100%);
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
