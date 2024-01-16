@@ -65,7 +65,7 @@ html, body {
     color: black;
 }
 
-.nav a:hover {
+.nav a:hover, .nav2 a:hover {
     color: #245292;
 }
 
@@ -209,6 +209,10 @@ html, body {
     .nav {
       flex-flow: column wrap;
       padding: 0;
+    }
+    .anchor {
+        position: relative;
+        padding-top: 150px; 
     }
     .hpd-item p {
         text-align: center;

@@ -9,13 +9,16 @@
 </head>
 <body class = "fullwidth">
     <!--
-        Remake:
-        - Create sticky header and footer
-        - Create homepage text
-        - Learn flexbox
+        Make sure to update to new version
+        v. 1.0.0
+        Fixed:
+        - I'm a senior
+        - Fix navigation
+            - Phone screen padding
+            - Phone screen link doesn't scroll to section (Google Chrome bug)
+        - Carousel pictures [future]
     -->
-
-    <div id = "top"></div>
+    <div id = "top" name = "top"></div>
     <ul class = "nav sticky-top">
         <li><a href = "#top">Michael Tanjuakio</a></li>
         <li>
@@ -35,7 +38,7 @@
             <li class = "hpd-item">
                 <p class = "text-align-left" style = "width: 100%">
                     Hello! I’m Michael Tanjuakio <br><br>
-                    I’m a junior at UTD pursuing a Bachelors for Software Engineering
+                    I’m a senior at UTD pursuing a Bachelors for Software Engineering
                 </p>
                 <div class = "icon-list">
                         <a href = "https://github.com/Michael-Tanjuakio"><img src = "pics-and-font/github-icon.png" class = "icon"></a>
@@ -47,7 +50,7 @@
     </section>
 
     <section class = "hidden">
-        <p class = "center text-align-center"  id = "about-me">
+        <p class = "center text-align-center anchor" id = "about-me" name = "about-me">
             <br><br><br>About Me
             <hr class = "center" style = "max-width: 40%;">
         </p>
@@ -74,17 +77,18 @@
             </li>
         </ul>
     </section>
-    <section class = "hidden" id = "projects">
-        <p class = "center text-align-center">
-            <br>Projects
-            <hr class = "center" style = "max-width: 40%;" id = "about-me">
+
+    <section class = "hidden">
+        <p class = "center text-align-center anchor" id = "projects" name = "projects">
+            <br><br><br>Projects
+            <hr class = "center" style = "max-width: 40%;">
         </p>
     </section>
 
     <section class = "hidden">
         <p class = "center text-align-center">
             <br><br> The Lofi App
-            <hr class = "center" style = "max-width: 40%;" id = "about-me">
+            <hr class = "center" style = "max-width: 40%;">
         </p>
         <br><br>
     </section>
@@ -123,7 +127,7 @@
     <section class = "hidden">
         <p class = "center text-align-center">
             <br><br> Maze Simulation
-            <hr class = "center" style = "max-width: 40%;" id = "about-me">
+            <hr class = "center" style = "max-width: 40%;">
         </p>
         <br><br>
     </section>
